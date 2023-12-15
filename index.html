@@ -5,47 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta keywords="Portfolio">
-    <title>LisHack396_Portfolio | Pagina principal</title>
+    <title>LisHack396_Portfolio</title>
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center">
-                <h1>Hero</h1>
-            </div>
-        </div>
-        <nav class="navbar navbar-expand-lg fixed-top">
+    <header class="header-footer sticky-top">
+        <nav class="navbar navbar-dark navbar-expand-lg text-white">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"><span
                         class="navbar-toggler-icon"></span>
                 </button>
-                <a class="navbar-brand" href="#">Navbar</a>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                <a class="navbar-brand" href="#"><span class="border border-rounded-circle"><img class="foto"
+                            src="img/Foto_personal.PNG" alt="foto"></span>Lisandra Valdivia Torres</a>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Lisandra Valdivia Torres</h5>
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobremi">Acerca de mi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills">Habilidades</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#proyectos">Proyectos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#sobremi">Acerca de mi</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#sobremi">Acerca de mi</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#skills">Habilidades</a>
-                            </li>
-                            <li class="nav-item dropdown">
                                 <a class="nav-link" href="#contacto">Contactos</a>
                             </li>
                         </ul>
@@ -56,49 +49,53 @@
     </header>
 
     <div class="container-fluid pt-5">
-        <div class="row justify-content-center align-items-center text-sm-center mb-1 principal">
-            <h3 class="proyectos">Proyectos</h3>
-            <p>No hay proyectos por el momento</p>
+        <div id="sobremi" class="row justify-content-center align-items-center text-sm-center pb-2 mb-3 principal">
+            <h3 class="titulo-seccion">Acerca de mi</h3>
+            <div class="col-md-4-offset"></div>
+            <div class="col-md-4 text-sm-justify pt-5">
+                <p>Soy estudiante de tercer año de la Universidad de Ciencias Informáticas en Cuba. Tengo 2 años de
+                    experiencias trabajando con Python. Estoy interesada en el área de la ciencia de datos enfocada
+                    en el sector empresarial y financiero. Me apasiona resolver problemas con grandes datasets a
+                    través de los datos estadisticos y el machine learning. En un futuro pienso aprender a desarrollar
+                    proyectos de inteligencia artificial, y trabajar en un equipo de desarrollo.
+                </p>
+            </div>
         </div>
-        <div class="row justify-content-center align-items-center text-sm-center mb-1 principal">
-            <h3 class="sobremi">Acerca de mi</h3>
-            <p>Mi nombre es Lisandra Valdivia Torres. Tengo 20 años. Soy estudiante de tercer año de la Universidad de
-                Ciencias Informaticas (UCI) en Cuba.</p><br>
-            <p>Soy una entusiasta de la ciencia de datos enfocada en el sector empresarial. Actualmente no tengo ninguna
-                experiencia laboral. Entre mis</p><br>
-            <p>fortalezas poseo una gran curiosidad para aprender temas nuevos y motivacion por mejorar mis habilidades
-                en la programacion cada dia. Me</p><br>
-            <p>apasiona los datos estadisticos y el machine learning. En un futuro pienso aprender sobre la inteligencia
-                artificial, ademas de reforzar</p><br>
-            <p>los conocimientos adquiridos hasta la fecha.</p>
-            <a href="#"><button type="button" class="btn btn-primary">Descargar Curriculum Vitae(PDF)</button></a>
-        </div>
-        <div class="row justify-content-center align-items-center text-sm-center mb-1 principal">
-            <h3 class="habilidades">Habilidades y tecnologias en las que me especializo</h3>
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Lenguaje de programacion Python</li>
-                <li class="list-group-item">Base de Datos Relacional SQL</li>
-                <li class="list-group-item">Sistema de Gestion de Bases de Datos PostgresSQL</li>
+        <div id="skills" class="row justify-content-center align-items-center text-sm-center pt-5 pb-2 mb-3 principal">
+            <h3 class="titulo-seccion">Habilidades y tecnologias</h3>
+            <ul class="list-group list-group-flush pt-5">
+                <li class="list-group-item"><b>Habilidades tecnicas:</b> Limpieza de datos, Analisis de datos,
+                    Visualizacion de datos</li>
+                <li class="list-group-item"><b>Programacion:</b> Python, JavaScript, SQL</li>
+                <li class="list-group-item"><b>Base de datos:</b> PostgreSQL, MySQL</li>
+                <li class="list-group-item"><b>Analisis de datos:</b> Numpy, Pandas</li>
+                <li class="list-group-item"><b>Visualizacion de datos:</b> Matplotlib, Seaborn</li>
+                <li class="list-group-item"><b>Machine Learning:</b> Scikit-learn</li>
             </ul>
+        </div>
+        <div id="proyectos"
+            class="row justify-content-center align-items-center text-sm-center pt-5 pb-2 mb-3 principal">
+            <h3 class="proyectos titulo-seccion">Proyectos</h3>
+            <h3>No hay proyectos por el momento</h3>
         </div>
     </div>
 
     <footer class="header-footer">
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center text-sm-center mb-1 principal">
-                <h3 class="contacto">Plataformas y numeros de contacto</h3>
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action">Linkedln</a>
-                    <a href="#" class="list-group-item list-group-item-action">Github</a>
-                    <a href="mailto:lisandrav2003@gmail.com" class="list-group-item list-group-item-action">Email</a>
+        <div class="container-fluid mt-5">
+            <div id="contacto" class="row justify-content-center align-items-center text-sm-center mb-3">
+                <h3 class="contacto">Contactos</h3>
+                <div class="col-md-4-offset">
+                    <span><a class="btn border-rounded-circle"
+                            href="https://www.linkedin.com/in/lisandra-valdivia-torres-639b5b254/" role="button">
+                            <img src="img/bootstrap-icons-1.11.2/linkedin.svg" alt="linkedin" class="redes"></a></span>
+                    <span><a class="btn border-rounded-circle" href="https://github.com/LisHack396" role="button">
+                            <img src="img/bootstrap-icons-1.11.2/github.svg" alt="github" class="redes"></a></span>
                 </div>
             </div>
         </div>
     </footer>
 
-    <script src="js/jquery/jquery-3.2.1.min.js"></script>
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
 </body>
 
 </html>
